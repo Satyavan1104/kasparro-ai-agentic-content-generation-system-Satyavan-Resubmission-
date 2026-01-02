@@ -193,7 +193,7 @@ The Workflow describes the operational lifecycle of a request, from raw product 
 ## Sequence Diagram
 The Sequence Diagram illustrates time-ordered interactions between system components, showing how data and messages flow across agents from input submission to final JSON export.
 
-![Sequence Diagram](docs/System%20Design/Sequence%20Diagram.jpeg)
+![Sequence Diagram](docs/System%20Design/Sequence%20Diagram.png)
 
 - Temporal Flow: Clearly shows the order of message exchanges.
 - Actor Separation: Distinguishes ProductJSON, Coordinator, Agents, MessageHub, and Output.
@@ -220,4 +220,5 @@ The Sequence Diagram illustrates time-ordered interactions between system compon
 - Emergent system behavior  
 
 This system meets and exceeds the requirements for a **genuine multi-agent architecture**.
+
 
