@@ -1,0 +1,64 @@
+{
+  "page_type": "Comparison",
+  "title": "GlowBoost Vitamin C Serum vs RadiancePlus Vitamin C Serum",
+  "product_a": {
+    "id": "product_1",
+    "name": "GlowBoost Vitamin C Serum",
+    "concentration": "10% Vitamin C",
+    "skin_types": [
+      "Oily",
+      "Combination"
+    ],
+    "key_ingredients": [
+      "Vitamin C",
+      "Hyaluronic Acid"
+    ],
+    "benefits": [
+      "Brightening",
+      "Fades dark spots"
+    ],
+    "usage_instructions": "Apply 2–3 drops in the morning before sunscreen",
+    "side_effects": "Mild tingling for sensitive skin",
+    "price": "₹699",
+    "category": "Serum"
+  },
+  "product_b": {
+    "id": "competitor_1",
+    "name": "RadiancePlus Vitamin C Serum",
+    "concentration": "15% Vitamin C",
+    "skin_types": [
+      "All Skin Types"
+    ],
+    "key_ingredients": [
+      "Vitamin C",
+      "Niacinamide",
+      "Antioxidants"
+    ],
+    "benefits": [
+      "Anti-aging",
+      "Brightening",
+      "Hydration"
+    ],
+    "usage_instructions": "Apply 4-5 drops in the evening before moisturizer",
+    "side_effects": "May cause sensitivity for first-time users",
+    "price": "₹899",
+    "category": "Serum"
+  },
+  "comparison_points": [
+    {
+      "aspect": "Price",
+      "product_a": "₹699",
+      "product_b": "₹899"
+    },
+    {
+      "aspect": "Concentration",
+      "product_a": "10% Vitamin C",
+      "product_b": "15% Vitamin C"
+    },
+    {
+      "aspect": "Skin Types",
+      "product_a": "Oily, Combination",
+      "product_b": "All Skin Types"
+    }
+  ]
+}
