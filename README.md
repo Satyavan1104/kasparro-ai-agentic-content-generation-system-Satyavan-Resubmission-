@@ -92,22 +92,22 @@ The Multi-Agent Architecture represents a distributed system where autonomous, s
 
 ### Specialized Agents
 
-- **ProductDataAgent**
+- **Product Data Agent**
    - Parses and normalizes product input
    - Publishes structured product facts
    - Triggers downstream agents via coordination messages
 
-- **QueryGenerationAgent**
+- **Query Generation Agent**
    - Generates 15+ categorized user questions
    - Operates independently once product data is available
    - Notifies assembly agent upon completion
 
-- **RivalCreationAgent**
+- **Rival Creation Agent**
    - Constructs fictional competitor data
    - Operates in parallel with question generation
    - Sends competitive insights asynchronously
 
-- **PageAssemblyAgent**
+- **Page Assembly Agent**
    - Requests data from multiple agents
    - Applies templates and content modules
    - Produces final JSON artifacts
@@ -220,6 +220,7 @@ The Sequence Diagram illustrates time-ordered interactions between system compon
 - Emergent system behavior  
 
 This system meets and exceeds the requirements for a **genuine multi-agent architecture**.
+
 
 
 
