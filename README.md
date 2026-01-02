@@ -130,7 +130,7 @@ The system is designed as a **layered, agentic architecture** with explicit data
 ## System Architecturetr
 The System Architecture provides a layered, structural view of the entire platform, detailing how control logic, agents, communication infrastructure, and output generation are organized.
 
-![System Architecture](System%20Design/System.jpeg)
+![System Architecture](docs/System%20Design/System.jpeg)
 
 - **Input & Control Layer**
   - System entry point for workflow execution
@@ -167,7 +167,7 @@ The System Architecture provides a layered, structural view of the entire platfo
 ## Orchestration Graph (DAG)
 The Orchestration Graph models the system workflow as a Directed Acyclic Graph (DAG), capturing logical dependencies between agents without enforcing a rigid execution order. This enables dynamic coordination rather than hard-coded sequencing.
 
-![Orchestration Graph](System%20Design/DAG.jpeg)
+![Orchestration Graph](docs/System%20Design/DAG.jpeg)
 
 - Each node corresponds to an agent or processing step.
 - Directed edges indicate data or control dependencies.
@@ -177,7 +177,7 @@ The Orchestration Graph models the system workflow as a Directed Acyclic Graph (
 ## Flowchart
 The Workflow describes the operational lifecycle of a request, from raw product input to finalized JSON outputs, emphasizing agent autonomy and dynamic coordination.
 
-![Flowchart](System%20Design/workflow.jpeg)
+![Flowchart](docs/System%20Design/workflow.jpeg)
 
 - Start with Structured Input: Product dataset is submitted as JSON.
 - Data Parsing & Normalization: ProductDataAgent validates and standardizes input.
@@ -193,7 +193,7 @@ The Workflow describes the operational lifecycle of a request, from raw product 
 ## Sequence Diagram
 The Sequence Diagram illustrates time-ordered interactions between system components, showing how data and messages flow across agents from input submission to final JSON export.
 
-![Sequence Diagram](System%20Design/Sequence%20Diagram.jpeg)
+![Sequence Diagram](docs/System%20Design/Sequence%20Diagram.jpeg)
 
 - Temporal Flow: Clearly shows the order of message exchanges.
 - Actor Separation: Distinguishes ProductJSON, Coordinator, Agents, MessageHub, and Output.
@@ -220,3 +220,4 @@ The Sequence Diagram illustrates time-ordered interactions between system compon
 - Emergent system behavior  
 
 This system meets and exceeds the requirements for a **genuine multi-agent architecture**.
+
