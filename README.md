@@ -88,8 +88,6 @@ The Multi-Agent Architecture represents a distributed system where autonomous, s
 - **AgentRegistry** – Dynamic agent discovery
 - **WorkflowCoordinator** – Entry-point trigger (not a controller)
 
----
-
 ### Specialized Agents
 
 - **ProductDataAgent**
@@ -121,7 +119,6 @@ The Multi-Agent Architecture represents a distributed system where autonomous, s
 - **Template Processor**: Schema-driven rendering
 - **Page Templates**: FAQ, Product, Comparison
 - **Reusable Blocks**: Modular and extensible logic units
-
 
 ## Message Flow 
   * Coordinator sends task request with product data
@@ -231,6 +228,7 @@ The Sequence Diagram illustrates time-ordered interactions between system compon
 - Emergent system behavior  
 
 This system meets and exceeds the requirements for a **genuine multi-agent architecture**.
+
 
 
 
