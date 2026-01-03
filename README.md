@@ -92,35 +92,46 @@ The Multi-Agent Architecture represents a distributed system where autonomous, s
 
 ### Specialized Agents
 
-- **Product Data Agent**
-   - Parses and normalizes product input
-   - Publishes structured product facts
-   - Triggers downstream agents via coordination messages
+- **ProductDataAgent**
+  * Parses raw product data from JSON input
+  * Normalizes and structures product information
+  * Validates data completeness
+  * Stores structured data in knowledge base
 
-- **Query Generation Agent**
-   - Generates 15+ categorized user questions
-   - Operates independently once product data is available
-   - Notifies assembly agent upon completion
+- **QueryGenerationAgent**
+  * Generates 15+ categorized user questions
+  * Creates appropriate answers for each question
+  * Organizes questions by type (Informational, Usage, Safety, Benefits, Purchase)
+  * Maintains question quality and relevance
 
-- **Rival Creation Agent**
-   - Constructs fictional competitor data
-   - Operates in parallel with question generation
-   - Sends competitive insights asynchronously
+- **RivalCreationAgent**
+  * Creates fictional competitor products
+  * Ensures competitive differentiation
+  * Generates realistic product details
+  * Maintains market relevance
 
-- **Page Assembly Agent**
-   - Requests data from multiple agents
-   - Applies templates and content modules
-   - Produces final JSON artifacts
-   - Signals workflow completion
-
----
+- **PageAssemblyAgent**
+  * Assembles final JSON pages from all agent outputs
+  * Applies template formatting
+  * Generates structured output files
+  * Coordinates final workflow completion
 
 ## Content & Rendering Layer
-
 - **Content Modules**: Benefits, Usage, Safety, Comparison
 - **Template Processor**: Schema-driven rendering
 - **Page Templates**: FAQ, Product, Comparison
 - **Reusable Blocks**: Modular and extensible logic units
+
+
+## Message Flow 
+  * Coordinator sends task request with product data
+  * Data Processing Agent receives task, processes data, emits coordination request
+  * Question Generation Agent receives coordination request, creates questions, emits notification
+  * Competitor Creation Agent receives coordination request, creates competitor, emits notification
+  * Page Assembly Agent sees missing product data, emits data request (if needed)
+  * Data Processing Agent receives data request, provides product data
+  * Page Assembly Agent sees all data, generates pages, emits completion notification
+  * Coordinator receives completion notification, workflow finished
 
 ---
 
@@ -220,6 +231,7 @@ The Sequence Diagram illustrates time-ordered interactions between system compon
 - Emergent system behavior  
 
 This system meets and exceeds the requirements for a **genuine multi-agent architecture**.
+
 
 
 
